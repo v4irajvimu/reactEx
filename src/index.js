@@ -4,5 +4,10 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+var myDetails = {
+  Age : '27',
+  Gender: 'Male',
+  School: 'SSCK'
+};
+ReactDOM.render(<App msg = "Viraj Vimukthi Jayasinghe." details = {myDetails}/>, document.getElementById('root'));
 registerServiceWorker();
